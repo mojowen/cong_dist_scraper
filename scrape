@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export CONG_DIST_SCRAPER_PATH=$HOME/public_html/wp-content/plugins/sheet_map/data
+export GOOGLE_APPLICATION_CREDENTIALS=$HOME/cong_dist_scraper/credentials.json
+
+php base.php

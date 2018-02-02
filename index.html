@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="//maps.google.com/maps/api/js?v=3.exp&#038;key=AIzaSyCJZxNkunyGOUL3c9QMG4HIKe0OQ_H3_dY&#038;language=en_US&#038;libraries=places%2Cvisualization&#038;ver=6.13p"></script>
+  <script type="text/javascript" src="./sheet_map.js"></script>
+
+  <script type='text/javascript' src='https://spreadsheets.google.com/feeds/list/17KEaIm_O-ybIbW-cr1fNGRYfhkicqI5SjwMg1DpEwlo/1/public/values?alt=json-in-script&callback=SheetMap.addData'></script>
+
+</head>
+<body>
+
+  <h2 id="sheet_map_total"></h2>
+  <div id="map" style="height: 500px; width: 500px"></div>
+  <table id="sheet_map_table">
+    <thead>
+      <tr>
+        <th>Airport Name</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Employees</th>
+        <th>Payroll</th>
+        <th>Total Economic Impact</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script type="text/javascript">
+    var sheet_map = new SheetMap()
+  </script>
+
+</body>
+</html>
